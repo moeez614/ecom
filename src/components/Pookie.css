@@ -1,0 +1,509 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-weight: 500;
+  font-family: "Manrope", sans-serif;
+  font-optical-sizing: auto;
+  outline: none;
+}
+
+.title {
+  text-align: center;
+  margin: 20px;
+  font-size: 20px;
+}
+
+.bg-grey {
+  background-color: lightgrey;
+  margin: 20px;
+  width: calc(100% - 40px);
+  border-radius: 10px;
+  display: flex;
+  /* flex-direction: column; */
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.bg-grey img {
+  width: 300px;
+  margin: 30px;
+  border-radius: 10px;
+}
+
+.bg-grey p {
+  margin: 20px;
+  font-size: 17px;
+  padding: 10px;
+  width: 500px;
+}
+
+.portion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.breakfast {
+  background-color: lightgrey;
+  margin: 20px;
+  width: 360px;
+  border-radius: 10px;
+  height: 110vh;
+  /* display: block; */
+}
+
+.breakfast img {
+  width: 300px;
+  margin: 20px 30px;
+  border-radius: 10px;
+}
+
+.breakfast h2 {
+  text-align: center;
+  padding: 20px;
+}
+
+.breakfast p {
+  margin: 20px;
+  font-size: 17px;
+  padding: 10px;
+}
+
+.breakfast p li {
+  margin: 10px;
+}
+
+/* .rating {
+  margin-left: 20px;
+} */
+
+.r {
+  background-image: url(../images/roomsvg.jpg);
+  background-size: cover;
+  width: 220px;
+  height: 200px;
+  /* z-index: 2; */
+  border-radius: 5px;
+  margin: 10px;
+}
+
+.img-bar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.slot {
+  background-color: lightgrey;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  /* align-items: center; */
+  border-radius: 10px;
+  width: fit-content;
+  margin: 20px;
+  padding: 10px;
+}
+
+.fa-heart {
+  background-color: lightgrey;
+  border-radius: 50%;
+  padding: 5px;
+  margin: 10px;
+  color: lightcoral;
+  aspect-ratio: 1/1;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mt {
+  margin-top: 20px;
+}
+
+.jon {
+  margin: 20px 0 10px 0;
+}
+
+.jon i {
+  color: black;
+  margin: 10px;
+  position: relative;
+  cursor: pointer;
+}
+
+.jon i::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  background: black;
+  color: white;
+  padding: 4px 8px;
+  font-size: 12px;
+  border-radius: 4px;
+  letter-spacing: 2px;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s
+}
+
+.jon i:hover::after {
+  opacity: 1;
+}
+
+.btn-bn {
+  width: fit-content;
+  margin: 20px 0 0 20px;
+  padding: 10px;
+  border-radius: 10px;
+  outline: none;
+  ;
+}
+
+.login {
+  width: 300px;
+  height: 200px;
+  background-color: lightgrey;
+}
+
+/* From Uiverse.io by Yaya12085 */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 350px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 20px;
+  position: relative;
+}
+
+.title {
+  font-size: 28px;
+  color: royalblue;
+  font-weight: 600;
+  letter-spacing: -1px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
+}
+
+.title::before,
+.title::after {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  left: 0px;
+  background-color: royalblue;
+}
+
+.title::before {
+  width: 18px;
+  height: 18px;
+  background-color: royalblue;
+}
+
+.title::after {
+  width: 18px;
+  height: 18px;
+  animation: pulse 1s linear infinite;
+}
+
+.message,
+.signin {
+  color: rgba(88, 87, 87, 0.822);
+  font-size: 14px;
+}
+
+.signin {
+  text-align: center;
+}
+
+.signin a {
+  color: royalblue;
+}
+
+.signin a:hover {
+  text-decoration: underline royalblue;
+}
+
+.flex {
+  display: flex;
+  width: 100%;
+  gap: 6px;
+}
+
+.form label {
+  position: relative;
+}
+
+.form label .input {
+  width: 100%;
+  padding: 10px 10px 20px 10px;
+  outline: 0;
+  border: 1px solid rgba(105, 105, 105, 0.397);
+  border-radius: 10px;
+}
+
+.form label .input+span {
+  position: absolute;
+  left: 10px;
+  top: 15px;
+  color: grey;
+  font-size: 0.9em;
+  cursor: text;
+  transition: 0.3s ease;
+}
+
+.form label .input:placeholder-shown+span {
+  top: 15px;
+  font-size: 0.9em;
+}
+
+.form label .input:focus+span,
+.form label .input:valid+span {
+  top: 30px;
+  font-size: 0.7em;
+  font-weight: 600;
+}
+
+.form label .input:valid+span {
+  color: green;
+}
+
+.submit {
+  border: none;
+  outline: none;
+  background-color: royalblue;
+  padding: 10px;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 16px;
+  transform: .3s ease;
+}
+
+.submit:hover {
+  background-color: rgb(56, 90, 194);
+}
+
+@keyframes pulse {
+  from {
+    transform: scale(0.9);
+    opacity: 1;
+  }
+
+  to {
+    transform: scale(1.8);
+    opacity: 0;
+  }
+}
+
+.w23 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* flex-direction: column; */
+  margin: 14px;
+}
+
+.social-nav i {
+  font-size: 25px;
+}
+
+/* .inpute input{
+  padding: 10px 20px;
+  margin: 10px;
+  outline: 0;
+  border: 1px solid rgba(105, 105, 105, 0.397);
+  border-radius: 10px;
+} */
+/* .forme:nth-child(2) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+.stare {
+  border: 1px solid rgba(105, 105, 105, 0.397);
+  border-radius: 10px;
+  padding: 10px 20px;
+  margin: 10px;
+  width: fit-content;
+}
+
+.stare input {
+  outline: none;
+  border: none;
+}
+
+.stare i {
+  font-size: 7px;
+  position: relative;
+  bottom: 10px;
+  font-weight: 600;
+  color: rgb(150, 9, 9);
+}
+
+.flexe {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 20px;
+}
+
+.submite {
+  border: none;
+  outline: none;
+  background-color: royalblue;
+  padding: 10px;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 16px;
+  transform: .3s ease;
+  /* width: 70%; */
+  margin: 20px;
+}
+
+.submite:hover {
+  background-color: rgb(56, 90, 194);
+  box-shadow: 0px 0px 10px 0px lightgray;
+}
+.submite:hover i{
+  transform: translateX(2px);
+}
+.alert-message{
+  border: 2px solid red;
+  background-color: rgb(248, 115, 115 , 0.5) ;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+  font-size: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.alert-message i{
+  background-color: rgb(248, 115, 115 , 0);
+  font-size: 20px;
+  cursor: pointer;
+}
+/* From Uiverse.io by SelfMadeSystem */ 
+.ratinge {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 0.3rem;
+  --stroke: #666;
+  --fill: #4a1bd6;
+}
+
+.ratinge input {
+  appearance: unset;
+}
+
+.ratinge label {
+  cursor: pointer;
+}
+
+.ratinge svg {
+  width: 2rem;
+  height: 2rem;
+  overflow: visible;
+  fill: transparent;
+  stroke: var(--stroke);
+  stroke-linejoin: bevel;
+  stroke-dasharray: 12;
+  animation: idle 4s linear infinite;
+  transition: stroke 0.2s, fill 0.5s;
+}
+
+@keyframes idle {
+  from {
+    stroke-dashoffset: 24;
+  }
+}
+
+.ratinge label:hover svg {
+  stroke: var(--fill);
+}
+
+.ratinge input:checked ~ label svg {
+  transition: 0s;
+  animation: idle 4s linear infinite, yippee 0.75s backwards;
+  fill: var(--fill);
+  stroke: var(--fill);
+  stroke-opacity: 0;
+  stroke-dasharray: 0;
+  stroke-linejoin: miter;
+  stroke-width: 8px;
+}
+
+@keyframes yippee {
+  0% {
+    transform: scale(1);
+    fill: var(--fill);
+    fill-opacity: 0;
+    stroke-opacity: 1;
+    stroke: var(--stroke);
+    stroke-dasharray: 10;
+    stroke-width: 1px;
+    stroke-linejoin: bevel;
+  }
+
+  30% {
+    transform: scale(0);
+    fill: var(--fill);
+    fill-opacity: 0;
+    stroke-opacity: 1;
+    stroke: var(--stroke);
+    stroke-dasharray: 10;
+    stroke-width: 1px;
+    stroke-linejoin: bevel;
+  }
+
+  30.1% {
+    stroke: var(--fill);
+    stroke-dasharray: 0;
+    stroke-linejoin: miter;
+    stroke-width: 8px;
+  }
+
+  60% {
+    transform: scale(1.2);
+    fill: var(--fill);
+  }
+}
+.cp{
+  cursor: pointer;
+}
+.image-slider{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+.fa-angle-left , .fa-angle-right{
+  /* cursor: pointer; */
+  background-color: royalblue;
+  color: aliceblue;
+  padding: 6px;
+  border-radius: 50%;
+  /* aspect-ratio: 1/1; */
+}
+.fa-angle-left{
+  position: relative;
+  left: 30px;
+}
+.fa-angle-right{
+  position: relative;
+  right: 30px;
+}
